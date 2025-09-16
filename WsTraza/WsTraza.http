@@ -1,0 +1,6 @@
+@WsTraza_HostAddress = http://localhost:5075
+
+GET {{WsTraza_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
