@@ -8,6 +8,7 @@ using System.Data;
 
 namespace WsTraza.Controllers
 {
+    [ServiceFilter(typeof(AuthorizeAttribute))]
     [ApiController]
     [Route("[Controller]/[action]")]
     public class AlistamientoController : Controller

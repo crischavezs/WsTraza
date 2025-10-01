@@ -8,6 +8,7 @@ using static SkiaSharp.HarfBuzz.SKShaper;
 
 namespace WsTraza.Controllers
 {
+    [ServiceFilter(typeof(AuthorizeAttribute))]
     [ApiController]
     [Route("[Controller]/[action]")]
     public class ReportesController : Controller

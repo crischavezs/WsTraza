@@ -7,6 +7,7 @@ using WsTraza.Models;
 
 namespace WsTraza.Controllers;
 
+[ServiceFilter(typeof(AuthorizeAttribute))]
 [ApiController]
 [Route("[Controller]/[action]")]
 public class SolicitudesExtController : Controller
